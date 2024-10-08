@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+nav{
+    background-color: blueviolet;
+    height: 10vh;
+    width: 100%;
+    
+    
+}
+nav ul {
+    text-align: center;
+    display: flex;
+   
+   
+}
+nav ul li{
+    
+    margin-left: 17%;
+    padding-top: 3%;
+    
+}
+nav ul li a{
+    margin-left: 6%;
+    text-align: center;
+    color: aliceblue;
+    
+}
+
+
+
+.galeria{
+    margin: 0;
+    display:flex;
+    height: 50vh; /* 100% do tamanho da tela */
+    gap: 0.1px;
+    margin-top: 30vh;
+    
+  
+}
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.5s cubic-bezier(.85,.95,0,1.95);
+   
+    
+
+}
+
+.galeria div:hover{
+    flex: 3;
+    filter:grayscale(100%), ;
+}
+
+.galeria:hover div:not(:hover){
+    filter: opacity(50%);
+}
+
+footer{
+    background-color: blueviolet;
+    height: 10vh;
+    width: 100%;
+    margin-top: 30vh;
+    text-align: center;
+}
